@@ -8,3 +8,6 @@ console.log(student.gpa?.toFixed(2));
 console.log(student.gpa?.toFixed(2) ?? "No GPA available");
 console.log(student.enrollmentDate.toString());
 console.log(student.enrollmentDate.toLocaleString("en-US", { dateStyle: "long", timeStyle: "short" }));
+
+
+console.log("merge conflict test");
