@@ -1,4 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const age = 30;
-console.log(age);
+const polyfill_1 = require("@js-temporal/polyfill");
+const student = {
+    id: "STU-001", name: "Hana Tadesse", enrollmentDate: polyfill_1.Temporal.Now.instant(),
+};
+// Try these what does the compiler say?
+// student.id = "STU-999";
+console.log(student.gpa?.toFixed(2));
+console.log(student.gpa?.toFixed(2) ?? "No GPA available");
+console.log(student.enrollmentDate.toString());
+console.log(student.enrollmentDate.toLocaleString("en-US", { dateStyle: "long", timeStyle: "short" }));
+console.log("Student Name:", student.name);
+console.log("merge conflict test");
