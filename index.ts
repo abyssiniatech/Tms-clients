@@ -10,4 +10,9 @@ console.log(student.enrollmentDate.toString());
 console.log(student.enrollmentDate.toLocaleString("en-US", { dateStyle: "long", timeStyle: "short" }));
 
 
+
 console.log("merge conflict test");
+
+console.log("Student Name:", student.name);
+console.log("merge conflict test");
+
